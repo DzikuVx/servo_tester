@@ -33,7 +33,7 @@ void loop() {
   if (digitalRead(PIN_BUTTON_2) == LOW) {
     pos = pos - 10;
 
-    if (pos > MIN_WIDTH) {
+    if (pos < MIN_WIDTH) {
        pos = MIN_WIDTH; 
     }
 
